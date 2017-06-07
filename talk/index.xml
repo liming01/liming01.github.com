@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks on 沙漠守望者</title>
+    <link>https://liming01.github.io/talk/</link>
+    <description>Recent content in Recent &amp; Upcoming Talks on 沙漠守望者</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Ming LI</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Apache HAWQ的事务处理</title>
+      <link>https://liming01.github.io/talk/hawq-tx/</link>
+      <pubDate>Thu, 23 Mar 2017 15:30:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.io/talk/hawq-tx/</guid>
+      <description>&lt;p&gt;这个是在3月23日举办的HAWQ技术研讨会中本人做的技术演讲，本次演讲首先为大家介绍了PostgreSQL的事务处理中的多版本并发控制，然后结合了HAWQ的应用场景，介绍在HAWQ怎么实现事务并发控制，以及并行插入优化等问题，并解释了一些HAWQ使用的注意事项和将来可以考虑实现的一些方案。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

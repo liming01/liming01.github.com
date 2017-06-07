@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.21" />
+  <meta name="author" content="李明">
+  <meta name="description" content="数据库内核研发工程师">
+
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+
+  <link rel="alternate" href="https://liming01.github.io/index.xml" type="application/rss+xml" title="沙漠守望者">
+  <link rel="feed" href="https://liming01.github.io/index.xml" type="application/rss+xml" title="沙漠守望者">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://liming01.github.io/post/mpp-mp/">
+
+  
+
+  <title>大数据数据库的技术对垒：MapReduce vs. MPP | 沙漠守望者</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">沙漠守望者</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>主页</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>博客</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#talks">
+            
+            <span>视频</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>项目</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>联系方式</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  <img src="/img/headers/mpp-mp.png" class="article-banner" itemprop="image">
+  <span class="article-header-caption">MapReduce vs. MPP</span>
+</div>
+
+
+
+  <div class="article-container">
+    <h1 itemprop="name">大数据数据库的技术对垒：MapReduce vs. MPP</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2015-11-20 12:00:00 &#43;0000 UTC" itemprop="datePublished">
+      2015-11-20
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/mpp">MPP</a
+    >, 
+    
+    <a href="/tags/map-reduce">Map Reduce</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fliming01.github.io%2fpost%2fmpp-mp%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=%e5%a4%a7%e6%95%b0%e6%8d%ae%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9a%84%e6%8a%80%e6%9c%af%e5%af%b9%e5%9e%92%ef%bc%9aMapReduce%20vs.%20MPP&amp;url=https%3a%2f%2fliming01.github.io%2fpost%2fmpp-mp%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fliming01.github.io%2fpost%2fmpp-mp%2f&amp;title=%e5%a4%a7%e6%95%b0%e6%8d%ae%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9a%84%e6%8a%80%e6%9c%af%e5%af%b9%e5%9e%92%ef%bc%9aMapReduce%20vs.%20MPP"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fliming01.github.io%2fpost%2fmpp-mp%2f&amp;title=%e5%a4%a7%e6%95%b0%e6%8d%ae%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9a%84%e6%8a%80%e6%9c%af%e5%af%b9%e5%9e%92%ef%bc%9aMapReduce%20vs.%20MPP"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=%e5%a4%a7%e6%95%b0%e6%8d%ae%e6%95%b0%e6%8d%ae%e5%ba%93%e7%9a%84%e6%8a%80%e6%9c%af%e5%af%b9%e5%9e%92%ef%bc%9aMapReduce%20vs.%20MPP&amp;body=https%3a%2f%2fliming01.github.io%2fpost%2fmpp-mp%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p><div align = right> ------ 作者：李明(email: mli@apache.org) </div> </p>
+
+<p>这些年大数据概念已经成为IT界的热门，我们经常也会在新闻和报纸中看到。大数据概念中最为关键的技术就是数据库管理系统，伴随着Hadoop和MapReduce技术的流行，大数据的数据库中Hive和Spark等新型数据库脱颖而出；而另一个技术流派是基于传统的并行数据库技术演化而来的大规模并行处理（MPP）数据库比如GreenPlum和HAWQ也在最近几年突飞猛进，这两种流派都有对应的比较知名的产品，他们都已得到了市场的认可。</p>
+
+<p>然而对于一个不是搞大数据的门外汉，如何理解大数据概念，如何根据自身的需求来选择对应的数据库管理系统，就成了很多用户很关心的话题。本文将采用比较通俗易懂的介绍，让大家从本质上认识这些大数据库管理系统的技术实现和应用场景。</p>
+
+<h2 id="map-reduce技术">Map Reduce技术</h2>
+
+<p>大数据概念，顾名思义就是要解决数据量很大的情况下的数据库处理问题，所以在数据量增长很快的情况下，如何让处理的时间不能增长太多就成了关键。学习过算法的同学们很快能够举出例子，比如对半查找法，在一个已排序好的数据集中如何找到和指定数相等的位置？</p>
+
+<ul>
+<li>最笨的方法是从头到尾查找一遍，这个时间复杂度跟数据量是1:1的关系；</li>
+<li>比较好的方法是，讲这个数据分成几段，每段由单独的计算机去算，这样效率能提高n倍（n为分为的段数），时间复杂度跟数据量是1：n的关系；</li>
+<li>而对半查找法则是根据已知数据集是排好序的，所以我们只要在数据集的中间位置比较一下，就能知道我们要找的数据是在前半段还是后半段，然后选取有效的半段递归下去，直到有效半段只含一个数值就找到值相等的位置了，这个时间复杂度是1：2^m（m为递归循环的次数）。</li>
+</ul>
+
+<p>假设我们有1024个数，那么用这三个方法的处理时间比值为：1024：1024/n：10。从这个比值上很容易看出，随着数据量的增大，第三种方法的优势越发明显。</p>
+
+<p>如何让普通的数据处理也能像对半查找法一样高效，Google发表的论文提出了Map Reduce编程模型。该模型比较抽象复杂，接下来我用生活中的例子来说明该模型设计的原理。比如在一个大学里的大课堂里，老师想要知道上课的学生总数（实际上就是数据库的count操作），于是他让学生做如下事情：</p>
+
+<ol>
+<li>所有的学生都站起来，同时每个学生记住自己的人数为1</li>
+<li>每个同学都各自寻找站着的学生，找到后进行如下操作（假设学生A找到学生B）：
+
+<ul>
+<li>A的最新人数=A的旧人数+B的人数</li>
+<li>B坐下，A站着，继续步骤2.直到最后站着的人只剩下一个，那么该人持有的人数就是这堂课学生的总数。</li>
+</ul></li>
+</ol>
+
+<p>通过上面这个方式来算总人数，实际上是上面介绍的对半查找法的逆操作：</p>
+
+<ol>
+<li>当只有一个学生站着的时候，改学生拿到的数就是总人数（计算结果）；对应到对半查找法输入待查找的数据集（算法初始状态）</li>
+<li>当最后只剩下最后2名学生站着的时候，它正要把两个学生各自持有的总人数相加，它就像是对半查找法的第一次，找到中间的位置，判断相等的数应该是在前半段还是在后半段里。</li>
+<li>当最后剩下4名学生站着的时候，他们会分成两组来处理，每组算出各自组的总人数，并每组只留一个同学站着；而对半查找法里则是在步骤2里选择出来的半段里，再坐对半查找。</li>
+<li>……</li>
+<li>当最后剩下2^n名学生站着的时候（假设此时每个学生都站着），各自记住人数为1；对应到对半查找法里就是在n-1步骤处理完后选择的半段数据集个数只为1，找到要查找的数据。</li>
+</ol>
+
+<p>通过上面的对比我们不难发现，无论是从计算方式来看，还是从数据处理/搜索空间来看，这两个算法是互逆的。唯一的不同是对半查找法不需要再对已经判断舍弃的半段不用在运行，比如3）步骤中，对边查找继续搜索前半段或者后半段，但是学生点人数确实两组学生都要进行报数计算。</p>
+
+<p>学生点人数的方法看起来真的非常完美，可是这里面忽略了一个问题，那就是计算资源的问题，上面的每个学生都可以作为一个计算资源。而在现实中计算资源不会像这个例子一样那么多。所以还需要考虑如何讲这些步骤放到有限的计算资源上运行的问题。Map Reduce编程模型就是为了实现将很多复杂运算，以上面学生算总人数的方式去执行的一种编程模型。学生点人数中步骤1抽象为Map（每个学生都map成一个人数1），步骤2中的1）和2）就是Reduce操作，（将学生A和B两个学生站着处理完变成只有一个A站着）。同时考虑到在计算资源有限的情况下如何进行性能优化的问题，该编程模型还会将很多人的map操作，变为一个集合的map操作，讲多次Reduce操作变为一次集合的reduce操作。这样每个map或reduce就可以很方便地在一个计算资源（比如一个计算机）上进行运算了。</p>
+
+<h2 id="大规模并行处理-mpp-技术">大规模并行处理（MPP）技术</h2>
+
+<p>Mpp技术是从原来的并行数据库发展而来的，基于关系数据库的成熟技术，伴随着分布式与并行数据库技术的发展而来的。其中最为关键的技术就是它能够判断出数据之间的相互依赖关系，将可以并行的部分分发到各个节点上并行运行，针对关系数据库中最为常用的等值比较和等值联接（Join）等操作做出特别的优化，将待比较的列按照某种规律进行hash，根据不同的hash值分发到不同的节点上去进行比较处理（它可以被看做是Hash Join的分布式版本）。将查询中能并行的操作和操作产生的中间结果，通过这样的方式分发到不同的节点上去运算，从而最大程度地并行处理，来达到提高性能的方法。</p>
+
+<p>回到前面讲的学生点人数的例子，MPP的思路就是，根据现有的计算资源，将全班学生先按照简单规则分组排队，比如现有n台计算节点，我们就可以把全班学生分成n队，然后每队放到一个计算节点上去计算，计算完讲每队的计算结果再进行相加得到最后全班的总人数。</p>
+
+<h2 id="数据库管理系统中两种技术的优劣分析">数据库管理系统中两种技术的优劣分析</h2>
+
+<h3 id="性能比较">性能比较</h3>
+
+<p>可能细心的读者已经发现，MPP的学生点人数的处理方式不就是我在前面介绍的查找指定数例子中的第二个方法嘛；而Map Reduce对应的第三种方法看起来更高效啊。这句话在理想状态下是成立的，不过回到数据库管理系统里来看，采用这两种方式的性能比较就得另说了。</p>
+
+<p>根据前面论述的理论处理时间比值：“假设我们有1024个数，那么用这三个方法的处理时间比值为：1024：1024/n：10”，似乎很难让我们觉得这样的方法针对大数据处理有何优势。但是也正如我前面所说的，如果考虑计算资源的个数是有限的情况下，这个理想的比值又得重新改写了。</p>
+
+<p>试想一下，采用Map Reduce方式处理的学生点人数例子，在有限的计算资源下的模型应该添加一条这样的流程：
+1.每两个站着的学生要相加持有的人数时，需要到一个专门的地方去排队认证（每个认证的地方就是一个计算资源）。</p>
+
+<p>在这样的规则下，我们再来讨论Map Reduce和MPP的性能对比。比如我们就只有3个计算资源，那么Map Reduce这种修改后的点人数流程能够发挥的最大性能，跟MPP先分3队，再点人数的性能已经没有区别了。更何况如何协调两个站着的学生去认证处排队，也比MPP现通过简单方法分队再处理更耗时间，这样会导致每次数据库查询的初始化等准备时间增加很多。</p>
+
+<p>而且目前所有的数据库管理系统一般都是部署到特定的节点上的，所以能利用计算资源都是一定的。所以Map Reduce在这种情况下很难发挥优势。更为糟糕的是，因为一般的数据库查询，可能会涉及到很多操作及其他们之间的依赖关系（在关系数据库中，查询一般都会被转化为查询树，用来表示操作节点之间的先后顺序），这样很多情况是无法做到并行处理的。而MPP数据库能够利用传统的关系数据库技术，更容易根据这些依赖关系来规则执行计划，达到最大程度的并行处理。</p>
+
+<h3 id="其他方面的因素">其他方面的因素</h3>
+
+<p>由于Map Reduce模型与传统的数据库处理技术相去甚远，很难将传统数据库支持的所有操作都毫无差异地用它重新实现一遍，所以通过它实现的数据库管理系统在支持传统的数据库复杂查询时就显得力不从心了。另外在语言数据库的接口，SQL标准的支持，性能调优配置等方面也因为不能继承关系数据库的成熟技术，而导致学习门槛增高，易用性难于保证。</p>
+
+<h3 id="真实的tpc-ds测试比较">真实的TPC-DS测试比较</h3>
+
+<p>根据上面的分析，我们不难看出MPP数据库的优势，下面我们选取同样都是底层文件系统采用Hadoop的HDFS分布式文件系统作为数据存储，上层采用MPP技术的HAWQ与采用Map Reduce的Hive在TPC-DS基准测试中的对比结果吧（数据来自：<a href="https://blog.pivotal.io/big-data-pivotal/products/performance-benchmark-pivotal-hawq-beats-impala-apache-hive-part-1" target="_blank">pivotal公布的hawq性能测试</a>)：</p>
+
+<ul>
+<li>性能：简单查询性能相当；HAWQ在处理复杂语句的性能是Hive的三四倍左右。</li>
+<li>对复杂查询的支持：Hive只支持基准测试99条语句中的66条，而HAWQ支持全部。</li>
+</ul>
+
+<h2 id="总结">总结</h2>
+
+<p>Map Reduce计算模型在计算资源无限、数据无相关性的情况下很容易具有良好的扩展性，特别适用于计算网格等领域或者简单数据库查询的处理上。但是就目前而言，在实现数据库管理系统领域，它仍然受限与资源分配、数据相关性等因素的制约，很难达到MPP发展的高度。不过技术发展日新月异，也许不出时日，它就能突破这些障碍，或者与MPP技术结合，或许有新技术助力，追平甚至超越MPP数据库也是很有可能的。</p>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+
+    
+    <li class="next"><a href="https://liming01.github.io/post/hawq-feature/">强者更强：HAWQ性能的思考 <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Ming LI &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

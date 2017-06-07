@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gpdb on 沙漠守望者</title>
+    <link>https://liming01.github.io/tags/gpdb/</link>
+    <description>Recent content in Gpdb on 沙漠守望者</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Ming LI</copyright>
+    <lastBuildDate>Sun, 27 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/gpdb/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Greenplum Database</title>
+      <link>https://liming01.github.io/project/gpdb/</link>
+      <pubDate>Sun, 27 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.io/project/gpdb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
