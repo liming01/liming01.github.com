@@ -2,12 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on 沙漠守望者</title>
-    <link>https://liming01.github.io/home/</link>
+    <link>https://liming01.github.com/home/</link>
     <description>Recent content in Homes on 沙漠守望者</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Ming LI</copyright>
     <lastBuildDate>Thu, 01 Jun 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/home/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://liming01.github.com/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://liming01.github.com/home/about/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/home/about/</guid>
+      <description>简介 李明，中国福建人，目前定居北京。
+软件工程师，主要从事数据库内核研发、数据库测试、数据库管理工具研发等相关工作。特别对PostgreSQL及其相关的项目有相当的兴趣。
+目前主要在做HAWQ和GPDB等并行数据库的内核研发工作。</description>
+    </item>
+    
+    <item>
+      <title>博客日志</title>
+      <link>https://liming01.github.com/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>演讲视频</title>
+      <link>https://liming01.github.com/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>开源项目</title>
+      <link>https://liming01.github.com/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>联系方式</title>
+      <link>https://liming01.github.com/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/home/contact/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

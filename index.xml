@@ -1,30 +1,247 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>沙漠守望者 on 沙漠守望者</title>
-    <link>https://liming01.github.io/</link>
-    <description>Recent content in 沙漠守望者 on 沙漠守望者</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>沙漠守望者</title>
+    <link>https://liming01.github.com/</link>
+    <description>Recent content on 沙漠守望者</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <copyright>&amp;copy; 2017 Ming LI</copyright>
     <lastBuildDate>Thu, 01 Jun 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+	    <atom:link href="https://liming01.github.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://liming01.github.com/home/about/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/home/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;简介&#34;&gt;简介&lt;/h1&gt;
+
+&lt;p&gt;李明，中国福建人，目前定居北京。&lt;/p&gt;
+
+&lt;p&gt;软件工程师，主要从事数据库内核研发、数据库测试、数据库管理工具研发等相关工作。特别对PostgreSQL及其相关的项目有相当的兴趣。&lt;/p&gt;
+
+&lt;p&gt;目前主要在做HAWQ和GPDB等并行数据库的内核研发工作。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>博客日志</title>
+      <link>https://liming01.github.com/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>演讲视频</title>
+      <link>https://liming01.github.com/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>开源项目</title>
+      <link>https://liming01.github.com/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>联系方式</title>
+      <link>https://liming01.github.com/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/home/contact/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Apache HAWQ的事务处理</title>
-      <link>https://liming01.github.io/talk/hawq-tx/</link>
+      <link>https://liming01.github.com/talk/hawq-tx/</link>
       <pubDate>Thu, 23 Mar 2017 15:30:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/talk/hawq-tx/</guid>
-      <description>&lt;p&gt;这个是在3月23日举办的HAWQ技术研讨会中本人做的技术演讲，本次演讲首先为大家介绍了PostgreSQL的事务处理中的多版本并发控制，然后结合了HAWQ的应用场景，介绍在HAWQ怎么实现事务并发控制，以及并行插入优化等问题，并解释了一些HAWQ使用的注意事项和将来可以考虑实现的一些方案。&lt;/p&gt;
+      <guid>https://liming01.github.com/talk/hawq-tx/</guid>
+      <description>
+
+&lt;p&gt;这个是在3月23日举办的HAWQ技术研讨会中本人做的技术演讲，本次演讲首先为大家介绍了PostgreSQL的事务处理中的多版本并发控制，然后结合了HAWQ的应用场景，介绍在HAWQ怎么实现事务并发控制，以及并行插入优化等问题，并解释了一些HAWQ使用的注意事项和将来可以考虑实现的一些方案。&lt;/p&gt;
+
+&lt;h1 id=&#34;追加评论-2019年5月30日&#34;&gt;追加评论(2019年5月30日)&lt;/h1&gt;
+
+&lt;p&gt;需要说明一下：
+PPT里面引用了第五、六、七页的例子是直接从Bruce Momjian的“MVCC Unmasked”的报告里通过图片拷贝过来的，原来是PPT格式，我在页面的注释处写了引用的出处了。但是在放到HAWQ的wiki之前，公司的人把它转换成PDF格式的，导致所有页面的注释没能导出来。&lt;/p&gt;
+
+&lt;p&gt;我负责公司的内部的tech talk，由于这周没有人分享，考虑到接下来的工作多个组可能都要涉及到这些知识，我就准备自己上去分享下相关的背景知识等。由于我们组活儿也比较紧，我在开会的前一天才有时间花了半天左右的时间准备PPT，所以我就从网上找些资料，把相关的东西串起来，有些图片直接从官方的公开文档里拷贝过来。&lt;/p&gt;
+
+&lt;p&gt;然后就发生了让我很郁闷的一件事情。有个同事过来跟我说，说所有的图片啥的不是自己画的都必须要有引用出处。还说我这个链接里的公开资料直接引用别人的东西，不注明出处涉及到剽窃行为。对此表示很气愤！先暂且不说我是写了引用出处的，也不是我的原因导致了这个结果。就算是我确实没写出处，我这次演讲的目的本来就是讲HAWQ的事务实现，只是介绍这个实现之前，必须先了解PostgreSQL的事务实现（本来PostgreSQL的事务实现也不是我实现的，根本就不是我原创的东西，何来剽窃一说？）也不知道达到剽窃这么高的一个高度吧？&lt;/p&gt;
+
+&lt;p&gt;说起这件事，让我想起来了5月21日华为老总任正非的访谈，说到自主创新的问题，他如是说：&lt;strong&gt;自主创新如果是一种精神，我支持；如果是一种行动，我就反对！&lt;/strong&gt;
+看到那个访谈，我立刻在微信的朋友圈转发，比附上我的留言：&lt;strong&gt;战略上藐视敌人，战术上要重视敌人！战略上自主创新，战术上还是要站在现有巨人的肩膀上，搞最前沿的创新！&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;有些人以为要自主创新就要从每个螺丝钉开始，从最基础的每个东西都是自主的才行。殊不知我们的重心要放在最前沿的创新上，放在最需要我们花力气的地方！可惜这些人永远看不到别人的意图！只知道拿一些条条框框来限制你，不考虑时间、机会、成本，站在道德的制高点，扮成维护完美的圣斗士！我只想说：不要扮演圣人了，让你内部技术分享你不分享，别人分享你就在那边指指点点，你觉得合适吗？&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>用packer创建Amazon AWS上的AMI</title>
+      <link>https://liming01.github.com/post/packer_ami/</link>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/post/packer_ami/</guid>
+      <description>
+
+&lt;p&gt;&lt;div align = right&gt; ------ 作者：李明(email: mli@apache.org) &lt;/div&gt; &lt;/p&gt;
+
+&lt;p&gt;本文是工作中的日志：如何用packer创建Amazon AWS上的AMI。&lt;/p&gt;
+
+&lt;h1 id=&#34;using-packer-to-generate-a-amazon-aws-ami&#34;&gt;Using packer to generate a Amazon AWS AMI&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Install packer on mac:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Using command “brew install packer”&lt;/li&gt;
+&lt;li&gt;Or download packer from &lt;a href=&#34;https://www.packer.io/&#34; target=&#34;_blank&#34;&gt;https://www.packer.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Install awscli on mac:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;“pip install &amp;ndash;upgrade &amp;ndash;user awscli”&lt;/li&gt;
+&lt;li&gt;add aws path into $PATH : “export PATH=~/Library/Python/2.7/bin:$PATH”&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;login aws web site: &lt;a href=&#34;https://console.aws.amazon.com/console/home&#34; target=&#34;_blank&#34;&gt;https://console.aws.amazon.com/console/home&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;create key-pair @ &amp;ldquo;Service =&amp;gt; Compute =&amp;gt; EC2 =&amp;gt; Key Pairs =&amp;gt; Create Key Pair&amp;rdquo;, and download the generated file &amp;lsquo;user.pem&amp;rsquo; into ~/.aws, and chmod 400 user.pem.&lt;/li&gt;
+&lt;li&gt;Add user access key @ &amp;ldquo;Service =&amp;gt; Security, Identity &amp;amp; Compliance =&amp;gt; IAM =&amp;gt;         User =&amp;gt; click your username =&amp;gt; Security credentials =&amp;gt; Create access key&amp;rdquo; and download the generated info file &amp;lsquo;accessKeys.csv&amp;rsquo;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Set up awscli config:&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;vi ~/.aws/credentials (Below info is generated by step 3(b))&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; [default]
+ aws_access_key_id=XXXXXXXXXXXXXXXXX
+ aws_secret_access_key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;vi ~/.aws/config&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; [default]
+ region=us-west-2
+ output=json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;check awscli credential info setup correctly: aws ec2 describe-instances&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Search source_ami for packer&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;go to &lt;a href=&#34;https://aws.amazon.com/mp/&#34; target=&#34;_blank&#34;&gt;https://aws.amazon.com/mp/&lt;/a&gt;, click Continue to AWS marketplace.&lt;/li&gt;
+&lt;li&gt;&amp;rdquo; Porpular Categories =&amp;gt; Operating Systems =&amp;gt; Search OS keyword&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;select one item, and click the &amp;ldquo;continue&amp;rdquo; button =&amp;gt; Manual Launch =&amp;gt; select your region ami id. e.g. centos7.2 is US West (Oregon) ami-775e4f16.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Set credentials.json (which is same as step 4) for passing “&amp;ndash;var-file credentials.json” to packer, or you can directly pass these value as shell param “-var &amp;lsquo;aws_access_key=xxxxxx&amp;rsquo;” to packer command.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;vi ~/.aws/credentials.json&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+	&amp;quot;aws_access_key_id&amp;quot;:&amp;quot;XXXXXXXXXXXXXXXXX&amp;quot;,
+	&amp;quot;aws_secret_access_key&amp;quot;:&amp;quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;set “source_ami” below to the ID fetched at step 6&amp;copy;.
+vi /Users/gpadmin/workspace/hawq2ci/GPDB-HAWQ-DynamicProvisioning/packer/ami_test.json&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;{
+&amp;quot;variables&amp;quot;: {
+&amp;quot;aws_access_key&amp;quot;: &amp;quot;&amp;quot;,
+&amp;quot;aws_secret_key&amp;quot;: &amp;quot;&amp;quot;,
+&amp;quot;name&amp;quot;: &amp;quot;HAWQ_RHEL7.2_HVM&amp;quot;
+},
+&amp;quot;builders&amp;quot;: [{
+&amp;quot;type&amp;quot;: &amp;quot;amazon-ebs&amp;quot;,
+&amp;quot;access_key&amp;quot;: &amp;quot;{{user `aws_access_key`}}&amp;quot;,
+&amp;quot;secret_key&amp;quot;: &amp;quot;{{user `aws_secret_key`}}&amp;quot;,
+&amp;quot;region&amp;quot;: &amp;quot;us-west-2&amp;quot;,
+&amp;quot;source_ami&amp;quot;: &amp;quot;ami-775e4f16&amp;quot;,
+&amp;quot;instance_type&amp;quot;: &amp;quot;t2.micro&amp;quot;,
+&amp;quot;ssh_username&amp;quot;: &amp;quot;ec2-user&amp;quot;,
+&amp;quot;ami_name&amp;quot;: &amp;quot;{{user `name`}} {{timestamp}}&amp;quot;
+}],
+&amp;quot;provisioners&amp;quot;: [{
+&amp;quot;type&amp;quot;: &amp;quot;shell&amp;quot;,
+&amp;quot;inline&amp;quot;: [
+  &amp;quot;sleep 30&amp;quot;,
+  &amp;quot;echo &#39;for test&#39;&amp;quot;
+]
+}]
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Run the command to validate the json file
+&lt;code&gt;shell
+cd /Users/gpadmin/workspace/hawq2ci/GPDB-HAWQ-DynamicProvisioning/packer
+packer validate ami_test.json
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Build AMI.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;packer build --var-file ~/.aws/credentials.json ami_test.json
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;run-ec2-instance-from-a-ami&#34;&gt;Run EC2 Instance from a AMI&lt;/h1&gt;
+
+&lt;p&gt;We use pre-exists vpc and subnet.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Create security group
+&lt;code&gt;shell
+aws ec2 create-security-group --group-name mli_sg --description &amp;quot;My security group for testing&amp;quot; --vpc-id vpc-4ef3972a
+aws ec2 describe-security-groups --group-ids sg-7c143b04
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add Inbound SSH access&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;aws ec2 authorize-security-group-ingress --group-id sg-7c143b04 --protocol tcp --port 22 --cidr 10.34.0.0/16
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Run EC2 Instance
+&lt;code&gt;shell
+aws ec2 run-instances --image-id ami-d9e26eb9 --count 1 --instance-type t2.micro --key-name mli --security-group-ids sg-a398b7db --subnet-id subnet-a65cc3c2
+&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
     <item>
       <title>强者更强：HAWQ性能的思考</title>
-      <link>https://liming01.github.io/post/hawq-feature/</link>
+      <link>https://liming01.github.com/post/hawq-feature/</link>
       <pubDate>Wed, 20 Apr 2016 11:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/post/hawq-feature/</guid>
+      <guid>https://liming01.github.com/post/hawq-feature/</guid>
       <description>
 
 &lt;p&gt;&lt;div align = right&gt; ------ 作者：李明(email: mli@apache.org) &lt;/div&gt; &lt;/p&gt;
@@ -32,10 +249,10 @@
 &lt;p&gt;SQL on Hadoop产品非常繁多，从性能角度来看，比较好的有HAWQ、Impala。虽然目前HAWQ还是大幅领先于Impala（参见：&lt;a href=&#34;https://blog.pivotal.io/big-data-pivotal/products/performance-benchmark-pivotal-hawq-beats-impala-apache-hive-part-1&#34; target=&#34;_blank&#34;&gt;pivotal公布的hawq性能测试&lt;/a&gt;)，但是从最近的Impala的&lt;a href=&#34;https://www.cloudera.com/documentation/enterprise/release-notes/topics/impala_new_features.html#new_features_250&#34; target=&#34;_blank&#34;&gt;新版本发布公告&lt;/a&gt;来看，它最近一直集中精力实现各种新的优化手段。为了使HAWQ继续保持竞争力，我们有必要学习其他竞争对手的优点，才能做到“知彼知己者，百战不殆”。&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;本文的观点仅代表本人观点，用于学习探讨交流。若因此出现经济、法律等方面的，与本人无关。&lt;/p&gt;
-
+  &lt;div&gt;
+    本文的观点仅代表本人观点，用于学习探讨交流。若因此出现经济、法律等方面的，与本人无关。
+  &lt;/div&gt;
 &lt;/div&gt;
-
 
 &lt;h2 id=&#34;hawq-to-do-list&#34;&gt;HAWQ TO DO LIST&lt;/h2&gt;
 
@@ -84,10 +301,10 @@
     
     <item>
       <title>大数据数据库的技术对垒：MapReduce vs. MPP</title>
-      <link>https://liming01.github.io/post/mpp-mp/</link>
+      <link>https://liming01.github.com/post/mpp-mp/</link>
       <pubDate>Fri, 20 Nov 2015 12:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/post/mpp-mp/</guid>
+      <guid>https://liming01.github.com/post/mpp-mp/</guid>
       <description>
 
 &lt;p&gt;&lt;div align = right&gt; ------ 作者：李明(email: mli@apache.org) &lt;/div&gt; &lt;/p&gt;
@@ -176,19 +393,19 @@
     
     <item>
       <title>Apache HAWQ</title>
-      <link>https://liming01.github.io/project/hawq/</link>
+      <link>https://liming01.github.com/project/hawq/</link>
       <pubDate>Sun, 27 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/project/hawq/</guid>
+      <guid>https://liming01.github.com/project/hawq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Greenplum Database</title>
-      <link>https://liming01.github.io/project/gpdb/</link>
+      <link>https://liming01.github.com/project/gpdb/</link>
       <pubDate>Sun, 27 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/project/gpdb/</guid>
+      <guid>https://liming01.github.com/project/gpdb/</guid>
       <description></description>
     </item>
     

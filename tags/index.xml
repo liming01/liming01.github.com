@@ -2,74 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 沙漠守望者</title>
-    <link>https://liming01.github.io/tags/</link>
+    <link>https://liming01.github.com/tags/</link>
     <description>Recent content in Tags on 沙漠守望者</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Ming LI</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Mar 2017 11:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://liming01.github.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AMI</title>
+      <link>https://liming01.github.com/tags/ami/</link>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/tags/ami/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://liming01.github.com/tags/aws/</link>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Packer</title>
+      <link>https://liming01.github.com/tags/packer/</link>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/tags/packer/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Content tagged as &#39;Academic&#39;</title>
-      <link>https://liming01.github.io/tags/academic/</link>
+      <link>https://liming01.github.com/tags/academic/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/tags/academic/</guid>
-      <description>&lt;p&gt;Here is a list of all the content that has been tagged as &lt;em&gt;academic&lt;/em&gt;.&lt;/p&gt;
-</description>
+      <guid>https://liming01.github.com/tags/academic/</guid>
+      <description>Here is a list of all the content that has been tagged as academic.</description>
     </item>
     
     <item>
-      <title>Gpdb</title>
-      <link>https://liming01.github.io/tags/gpdb/</link>
-      <pubDate>Sun, 27 Apr 2014 00:00:00 +0000</pubDate>
+      <title>hawq</title>
+      <link>https://liming01.github.com/tags/hawq/</link>
+      <pubDate>Wed, 20 Apr 2016 11:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/tags/gpdb/</guid>
+      <guid>https://liming01.github.com/tags/hawq/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hawq</title>
-      <link>https://liming01.github.io/tags/hawq/</link>
+      <title>impala</title>
+      <link>https://liming01.github.com/tags/impala/</link>
       <pubDate>Wed, 20 Apr 2016 11:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/tags/hawq/</guid>
+      <guid>https://liming01.github.com/tags/impala/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Impala</title>
-      <link>https://liming01.github.io/tags/impala/</link>
-      <pubDate>Wed, 20 Apr 2016 11:00:00 +0000</pubDate>
+      <title>MPP</title>
+      <link>https://liming01.github.com/tags/mpp/</link>
+      <pubDate>Fri, 20 Nov 2015 12:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/tags/impala/</guid>
+      <guid>https://liming01.github.com/tags/mpp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Map Reduce</title>
-      <link>https://liming01.github.io/tags/map-reduce/</link>
+      <link>https://liming01.github.com/tags/map-reduce/</link>
       <pubDate>Fri, 20 Nov 2015 12:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/tags/map-reduce/</guid>
+      <guid>https://liming01.github.com/tags/map-reduce/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Mpp</title>
-      <link>https://liming01.github.io/tags/mpp/</link>
-      <pubDate>Fri, 20 Nov 2015 12:00:00 +0000</pubDate>
-      
-      <guid>https://liming01.github.io/tags/mpp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Postgresql</title>
-      <link>https://liming01.github.io/tags/postgresql/</link>
+      <title>gpdb</title>
+      <link>https://liming01.github.com/tags/gpdb/</link>
       <pubDate>Sun, 27 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/tags/postgresql/</guid>
+      <guid>https://liming01.github.com/tags/gpdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>postgresql</title>
+      <link>https://liming01.github.com/tags/postgresql/</link>
+      <pubDate>Sun, 27 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.com/tags/postgresql/</guid>
       <description></description>
     </item>
     
