@@ -2,13 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 沙漠守望者</title>
-    <link>https://liming01.github.com/categories/</link>
+    <link>https://liming01.github.io/categories/</link>
     <description>Recent content in Categories on 沙漠守望者</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Ming LI</copyright>
-    
-	<atom:link href="https://liming01.github.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="/categories/" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
