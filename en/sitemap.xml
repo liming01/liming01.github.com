@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://liming01.github.com/talk/hawq-tx/</loc>
+    <lastmod>2017-03-23T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/talk/</loc>
+    <lastmod>2017-03-23T15:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/</loc>
+    <lastmod>2017-03-23T15:30:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="languages"
+                href="https://liming01.github.com/languages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://liming01.github.com/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/tags/ami/</loc>
+    <lastmod>2017-03-13T11:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/tags/aws/</loc>
+    <lastmod>2017-03-13T11:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/tags/packer/</loc>
+    <lastmod>2017-03-13T11:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/post/</loc>
+    <lastmod>2017-03-13T11:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/tags/</loc>
+    <lastmod>2017-03-13T11:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="languages"
+                href="https://liming01.github.com/languages/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://liming01.github.com/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/post/packer_ami/</loc>
+    <lastmod>2017-03-13T11:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/tags/hawq/</loc>
+    <lastmod>2016-04-20T11:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/tags/impala/</loc>
+    <lastmod>2016-04-20T11:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/post/hawq-feature/</loc>
+    <lastmod>2016-04-20T11:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/tags/mpp/</loc>
+    <lastmod>2015-11-20T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/tags/map-reduce/</loc>
+    <lastmod>2015-11-20T12:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/post/mpp-mp/</loc>
+    <lastmod>2015-11-20T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/project/hawq/</loc>
+    <lastmod>2014-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/project/gpdb/</loc>
+    <lastmod>2014-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/project/</loc>
+    <lastmod>2014-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/tags/gpdb/</loc>
+    <lastmod>2014-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/tags/postgresql/</loc>
+    <lastmod>2014-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/authors/admin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/authors/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="languages"
+                href="https://liming01.github.com/languages/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://liming01.github.com/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="languages"
+                href="https://liming01.github.com/languages/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://liming01.github.com/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/publication_types/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="languages"
+                href="https://liming01.github.com/languages/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://liming01.github.com/publication_types/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/publication/</loc>
+  </url>
+  
+</urlset>

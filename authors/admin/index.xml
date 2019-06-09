@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>沙漠守望者</title>
+    <link>https://liming01.github.io/authors/admin/</link>
+    <description>Recent content on 沙漠守望者</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017~2019 Ming LI</copyright>
+    <lastBuildDate>Mon, 13 Mar 2017 11:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://liming01.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>从COPY的并行化到gpcopy工具的诞生（未完）</title>
+      <link>https://liming01.github.io/post/copy2gpcopy/</link>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.io/post/copy2gpcopy/</guid>
+      <description>记录对gpcopy工具重要的人和事</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://liming01.github.io/authors/admin/</link>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.io/authors/admin/</guid>
+      <description>简介 李明，中国福建人，目前定居北京。 软件工程师，主要从事数据库内核研发、数据库测试、数据库管理工具研发等相关工作。特别对PostgreSQL</description>
+    </item>
+    
+  </channel>
+</rss>

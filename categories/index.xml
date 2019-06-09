@@ -5,8 +5,11 @@
     <link>https://liming01.github.io/categories/</link>
     <description>Recent content in Categories on 沙漠守望者</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>&amp;copy; 2017 Ming LI</copyright>
-    <atom:link href="/categories/" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017~2019 Ming LI</copyright>
+    
+	<atom:link href="https://liming01.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>

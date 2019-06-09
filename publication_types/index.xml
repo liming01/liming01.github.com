@@ -5,8 +5,11 @@
     <link>https://liming01.github.io/publication_types/</link>
     <description>Recent content in Publication_types on 沙漠守望者</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>&amp;copy; 2017 Ming LI</copyright>
-    <atom:link href="/publication_types/" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017~2019 Ming LI</copyright>
+    
+	<atom:link href="https://liming01.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>

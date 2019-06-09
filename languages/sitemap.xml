@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://liming01.github.com/languages/authors/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://liming01.github.com/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="languages"
+                href="https://liming01.github.com/languages/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/languages/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://liming01.github.com/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="languages"
+                href="https://liming01.github.com/languages/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/languages/publication_types/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://liming01.github.com/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="languages"
+                href="https://liming01.github.com/languages/publication_types/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/languages/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://liming01.github.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="languages"
+                href="https://liming01.github.com/languages/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://liming01.github.com/languages/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://liming01.github.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="languages"
+                href="https://liming01.github.com/languages/"
+                />
+  </url>
+  
+</urlset>

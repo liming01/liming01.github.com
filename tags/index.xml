@@ -5,31 +5,69 @@
     <link>https://liming01.github.io/tags/</link>
     <description>Recent content in Tags on 沙漠守望者</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>&amp;copy; 2017 Ming LI</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017~2019 Ming LI</copyright>
+    <lastBuildDate>Mon, 13 Mar 2017 11:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://liming01.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>Content tagged as &#39;Academic&#39;</title>
-      <link>https://liming01.github.io/tags/academic/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <title>AMI</title>
+      <link>https://liming01.github.io/tags/ami/</link>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/tags/academic/</guid>
-      <description>&lt;p&gt;Here is a list of all the content that has been tagged as &lt;em&gt;academic&lt;/em&gt;.&lt;/p&gt;
-</description>
+      <guid>https://liming01.github.io/tags/ami/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Gpdb</title>
+      <title>AWS</title>
+      <link>https://liming01.github.io/tags/aws/</link>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COPY ON SEGMENT</title>
+      <link>https://liming01.github.io/tags/copy-on-segment/</link>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.io/tags/copy-on-segment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Packer</title>
+      <link>https://liming01.github.io/tags/packer/</link>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.io/tags/packer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gpcopy</title>
+      <link>https://liming01.github.io/tags/gpcopy/</link>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.io/tags/gpcopy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gpdb</title>
       <link>https://liming01.github.io/tags/gpdb/</link>
-      <pubDate>Sun, 27 Apr 2014 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Mar 2017 11:00:00 +0000</pubDate>
       
       <guid>https://liming01.github.io/tags/gpdb/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hawq</title>
+      <title>hawq</title>
       <link>https://liming01.github.io/tags/hawq/</link>
       <pubDate>Wed, 20 Apr 2016 11:00:00 +0000</pubDate>
       
@@ -38,11 +76,20 @@
     </item>
     
     <item>
-      <title>Impala</title>
+      <title>impala</title>
       <link>https://liming01.github.io/tags/impala/</link>
       <pubDate>Wed, 20 Apr 2016 11:00:00 +0000</pubDate>
       
       <guid>https://liming01.github.io/tags/impala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MPP</title>
+      <link>https://liming01.github.io/tags/mpp/</link>
+      <pubDate>Fri, 20 Nov 2015 12:00:00 +0000</pubDate>
+      
+      <guid>https://liming01.github.io/tags/mpp/</guid>
       <description></description>
     </item>
     
@@ -56,16 +103,16 @@
     </item>
     
     <item>
-      <title>Mpp</title>
-      <link>https://liming01.github.io/tags/mpp/</link>
-      <pubDate>Fri, 20 Nov 2015 12:00:00 +0000</pubDate>
+      <title>Greenplum</title>
+      <link>https://liming01.github.io/tags/greenplum/</link>
+      <pubDate>Sun, 27 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://liming01.github.io/tags/mpp/</guid>
+      <guid>https://liming01.github.io/tags/greenplum/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Postgresql</title>
+      <title>PostgreSQL</title>
       <link>https://liming01.github.io/tags/postgresql/</link>
       <pubDate>Sun, 27 Apr 2014 00:00:00 +0000</pubDate>
       
